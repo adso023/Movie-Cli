@@ -1,0 +1,18 @@
+    //Movie Details Function
+    // status.start();
+    
+    // try{
+    //     console.log(name);
+    //     console.log(encodeURIComponent('The Avengers'));
+    //     let url = `${helper.baseUrl()}?apikey=${helper.apiKey()}&t=${encodeURIComponent(name['moviename'])}&type=movie`;
+    //     let settings = {method:"Get"};
+    //     console.log(url);
+    //     fetch(url, settings)
+    //         .then(res => res.json())
+    //         .then((json) => {
+    //             console.log(`\n${json}`);
+    //             status.stop();
+    //         });
+    // } catch(err) {
+    //     console.log(err.message);
+    // }
