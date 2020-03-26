@@ -44,6 +44,6 @@ program
     .command('--search')
     .alias('search')
     .description('get search results with particular search')
-    .action(() => console.log('Search'))
+    .action(() => commands.search())
 
 program.parse(process.argv);
