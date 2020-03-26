@@ -45,6 +45,27 @@ const tv_details = async () => {
     console.log(data);
 };
 
+const search = async () => {
+    const status = new Spinner('Fetching related information');
+
+    const search = await inquirer.askSearchParam();
+    status.start();
+    let data = null;
+    try{
+        let url = `${helper.baseUrl()}?apikey=${helper.apiKey()}&s=${encodeURIComponent(search['title'])}&type=${search['type']}&page=${search['page']}`
+        let settings = {method: "Get"};
+        const response = await fetch(url, settings);
+        data = await response.json();
+    }  catch(err) {
+        console.error(err.message);
+        console.log('Contact Program Developer');
+    } finally {
+        status.stop();
+    }
+
+    console.log(data);
+};
+
 const tv_episode_list = async () => {
     const status = new Spinner('Fetching related information');
 
@@ -132,10 +153,6 @@ const tv_episode_info = async () => {
         status.stop();
     }
     console.log(data);
-};
-
-const search = async () => {
-
 };
 
 module.exports = {
