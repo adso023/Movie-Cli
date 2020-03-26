@@ -88,7 +88,7 @@ module.exports = {
                     if(value.length && (value === 'movie' || value === 'series' || value === 'episode')) {
                         return true;
                     } else {
-                        return 'Invalid type search [movie, series, episode].'
+                        return 'Invalid type search [movie, series].'
                     }
                 }
             },
