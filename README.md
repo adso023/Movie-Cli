@@ -67,3 +67,6 @@ Commands:
   --search|search                                  get search results with particular search
   help [command]                                   display help for command
 ```
+
+##### To be Completed
+- [ ] Implement json data into models for display
