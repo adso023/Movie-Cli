@@ -18,5 +18,9 @@
     "inquirer": "^7.3.2",
     "node-fetch": "^2.6.1",
     "lodash": ">=4.17.21"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4"
   }
 }
