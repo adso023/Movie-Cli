@@ -30,8 +30,8 @@ Commands:
 ```
 
 View Specific Command Help
+`ts-node .\src\tmdb-cli.ts search -h`
 ``` bash
-**Additional commands are missing**
 Usage: tmdb-cli search [options] [command]
 
 Searches for tv in a list
