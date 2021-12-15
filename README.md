@@ -29,7 +29,7 @@ Commands:
   help [command]   display help for command
 ```
 
-View Specific Command Help
+View Specific Command Help \
 `ts-node .\src\tmdb-cli.ts search -h`
 ``` bash
 Usage: tmdb-cli search [options] [command]
