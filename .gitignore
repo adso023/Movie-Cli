@@ -10,3 +10,5 @@ pids
 #Dependency directory
 node_modules
 misc/helper.js
+deprecated/
+env.ts

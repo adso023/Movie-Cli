@@ -1,72 +1,54 @@
 # Movie-Cli
 
-A commandline application that uses Omdb Database Api and Node technologies
+A commandline application that uses TMDB Database Api and Node technologies
 
 # Usage
+## Installation
+Clone Repo \
+`git clone https://github.com/adso023/Movie-Cli`
 
-#### Required Keys and file
-To use this app you must have node, npm and npx installed. Check versions
-This program also requires a Omdb Api key
-https://www.omdbapi.com/apikey.aspx to get a apikey
-Make a helper.js file in misc/ with the following code
-``` javascript
-const apiKey = () => {
-    return "Your Api Key Here...";
-}
+Install Dependencies \
+`npm install`
 
-const baseUrl = () => {
-    return "https://www.omdbapi.com/";
-}
+View Program Help \
+`ts-node .\src\tmdb-cli.ts`
 
-module.exports = {
-    apiKey,
-    baseUrl
-};
-```
-
+Output
 ``` bash
-$ node -v
-v13.5.0 (My Version)
-$ npm -v
-6.13.4
-$npx -v
-6.13.4
-```
+Usage: tmdb-cli [options] [command]
 
-#### Required Packages
-``` bash
-$ npm install chalk
-$ npm install clear
-$ npm install figlet
-$ npm install commander
-$ npm install clui
-$ npm install node-fetch
-$ npm install inquirer
-
-$ node src/index.js
-  __  __            _                 ____ _     ___ 
- |  \/  | _____   _(_) ___           / ___| |   |_ _|
- | |\/| |/ _ \ \ / / |/ _ \  _____  | |   | |    | | 
- | |  | | (_) \ V /| |  __/ |_____| | |___| |___ | | 
- |_|  |_|\___/ \_/ |_|\___|          \____|_____|___|
-
-Usage: index [options] [command]
-
-A cli app that gets movie and tv-show details
+A cli app that gets details about movies and tv-shows
 
 Options:
-  -V, --version                                    output the version number
-  -h, --help                                       display help for command
+  -V, --version    output the version number
+  -h, --help       display help for command
 
 Commands:
-  --movie|movie                                    get the movie details for specified name
-  --tv|tv                                          get the tv show description for specified name    
-  --tv-episode-list|tv-episode-list                get tv show episode list for specified name       
-  --tv-episode-information|tv-episode-information  get tv show episode details for name and
-                                                   episode num
-  --search|search                                  get search results with particular search
-  help [command]                                   display help for command
+  search           Searches for tv in a list
+  movie [options]  Gets movie details for a specified movie
+  help [command]   display help for command
 ```
 
-##### To be Completed
-- [ ] Implement json data into models for display
+View Specific Command Help
+``` bash
+**Additional commands are missing**
+Usage: tmdb-cli search [options] [command]
+
+Searches for tv in a list
+
+Options:
+  -h, --help  display help for command
+
+Commands:
+  movie       Search for movies
+  tv          Search for tv
+```
+
+
+# 
+#### To be Completed
+- [ ] Search Feature for Movies
+- [ ] Search feature for Tv
+- [ ] Display movie details
+- [ ] Display tv details
+- [ ] Add subcommands for tv (seasons, episode, etc)
